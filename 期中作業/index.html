@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HW</title>
+	</head>
+	<body>
+		<div id="game">
+			<section id="menu-scene" class="scene">
+				<a href="#game"><span>Play</span></a>
+			</section>
+
+			<section id="game-scene" class="scene">
+				<canvas id="game-canvas" width="1000" height="600"></canvas>
+			</section>
+
+			<section id="popup" class="hide">
+				<div id="popup-bg"></div>
+				<div id="best" class="hide">
+					<h1>BEST SCORE</h1>
+				</div>
+				<div id="popup-box">
+
+					<div id="popup-box-content">
+						<h1>Time Out!</h1>
+						<p>
+							your score:
+						</p>
+						<p>
+							<span class='score'>0</span>
+						</p>
+						<a href="#Retry"><span>Retry</span></a>
+					</div>
+
+				</div>
+			</section>
+
+		</div>
+		<audio id="BGM" loop="loop">
+			<source src="media/BGM.wav"></source>
+		</audio>
+
+		<audio id="btnover">
+			<source src="media/btn_over.wav"></source>
+			<source src="media/btn_over.ogg"></source>
+		</audio>
+
+		<audio id="btnactive">
+			<source src="media/btn_active.mp3"></source>
+			<source src="media/btn_active.ogg"></source>
+		</audio>
+
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/libs/jquery-2.0.2.min.js"></script>
+		<script src="js/mylibs/mylibs.js"></script>
+		<footer>使用←與→控制方向，按住SHIFT+方向鍵可加速</footer>
+
+	</body>
+</html>

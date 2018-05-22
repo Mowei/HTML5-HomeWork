@@ -1,0 +1,55 @@
+<!DOCTYPE >
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link href="./css/mycss.css" rel="stylesheet" type="text/css" />
+
+		<!-- midi.js package -->
+		<script src="./js/MIDI/AudioDetect.js" type="text/javascript"></script>
+		<script src="./js/MIDI/LoadPlugin.js" type="text/javascript"></script>
+		<script src="./js/MIDI/Plugin.js" type="text/javascript"></script>
+		<script src="./js/MIDI/Player.js" type="text/javascript"></script>
+		<script src="./js/Widgets/Loader.js" type="text/javascript"></script>
+		<script src="./js/Window/Event.js" type="text/javascript"></script>
+		<script src="./js/Window/DOMLoader.XMLHttp.js" type="text/javascript"></script>
+		<script src="./js/Window/DOMLoader.script.js" type="text/javascript"></script>
+		<!-- jasmid package -->
+		<script src="./inc/jasmid/stream.js"></script>
+		<script src="./inc/jasmid/midifile.js"></script>
+		<script src="./inc/jasmid/replayer.js"></script>
+		<!-- extras -->
+
+		<script src="./inc/Base64.js" type="text/javascript"></script>
+		<script src="./inc/base64binary.js" type="text/javascript"></script>
+
+		<script src="js/jquery-2.0.2.min.js"></script>
+		<script src="js/mylibs.js"></script>
+	</head>
+	<body>
+		<div id="game" class="movetop" style="overflow:hidden;">
+			<section id="Piano" class="scene">
+				<a href="#Piano"></a>
+				<a href="#Next"></a>
+			</section>
+			<section id="Guitar" class="scene moveleft">
+				<a href="#Previous"></a>
+				<a href="#Guitar"></a>
+			</section>
+			<section id="maingame" class="scene movetop">
+				<canvas id="gamepad"  width="570" height="220"></canvas>
+				<div id="chat" style="overflow:hidden;">
+					<div id="chat-history" ></div>
+					<div id="box" >
+						<input type="text" id="chat-name"style="width:80px;">
+						<input type="text" id="chat-input" style="width:500px;">
+						<input type="button" value="Send" id="send">
+					</div>
+				</div>
+				<div id="return">
+					<a href="#return"></a>
+				</div>
+			</section>
+		</div>
+
+	</body>
+</html>

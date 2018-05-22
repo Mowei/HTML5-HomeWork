@@ -1,0 +1,166 @@
+body {
+	background: #ffffff;
+	color: #333;
+	padding: 50px;
+}
+
+#game {
+	position: relative;
+	width: 1000px;
+	height: 600px;
+	overflow: hidden;
+}
+
+#game, footer {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.scene {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#menu-scene {
+	background: #ccc url(../img/menu.jpg);
+	display: -webkit-box;
+	-webkit-box-pack:center;
+	-webkit-box-align: center;
+	
+	display: -moz-box;
+	-moz-box-pack:center;
+	-moz-box-align: center;
+	
+	display: box;
+	box-pack:center;
+	box-align: center;
+}
+
+#game-scene {
+	background: #efefef url(../img/background.jpg);
+    top:-600px;
+}
+
+#game-scene.show-scene {
+    top:0;
+    -webkit-transition:top .3s linear;
+}
+
+
+/* Menu Scene Elements */
+a[href='#game'] {
+	width: 837px;
+	height: 427px;
+	background: url(../img/start.png);
+	overflow: hidden;
+	display: block;	
+}
+
+a[href='#game']:hover {
+	background-position: 0px;
+}
+
+a[href='#game']:active {
+	background-position: 0px;
+}
+
+a[href='#game'] span {
+	display: block;
+	margin-top: -999px;
+}
+
+
+a[href='#Retry'] {
+	width: 180px;
+	height: 90px;
+	background: url(../img/Retry.png);
+	overflow: hidden;
+	display: block;	
+}
+
+a[href='#Retry']:hover {
+	background-position: 0px;
+}
+a[href='#Retry'] span {
+	display: block;
+	margin-top: -999px;
+}
+
+
+/* Styles for game over popup */
+#popup {
+	
+	font-family: 'Audiowide', cursive;
+	font-size: 28px;
+	font-weight: 700;	  
+	text-shadow: 0px 1px 2px #fff;
+	
+	color: #222;
+	
+	position: absolute; 
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	
+	background: rgba(0,0,0,.5);
+	
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;			
+	
+	-webkit-transition: all .5s ease-in;
+}
+
+#popup h1 {
+	font-weight: 400;
+}
+
+#popup-box {
+	width: 400px;
+	height: 400px;
+	background: #ccc url(../img/popup_bg.jpg);
+	
+	border-radius: 10px;
+	
+	-webkit-box-shadow: 0 5px 5px #333;
+	
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	
+	-webkit-transition: all .5s ease-in;
+}
+
+#popup-box small {
+	font-size: .6em;
+}
+
+/* Styles to hide the popup box */
+#popup.hide {
+	background: rgba(0,0,0,0);
+	visibility: hidden;		
+}
+#popup.hide #popup-box{
+	margin-top: -800px;
+}
+#best{
+	font-family: 'Audiowide', cursive;
+	font-size: 6px;
+	
+	border-radius: 2px;
+	-webkit-box-shadow: 0 0 1em gold;
+	color: #FFF;
+	background: rgba(255,0,0,1);
+	
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	
+	-webkit-transition: all .5s ease-in;
+}
+#best.hide{
+	background: rgba(0,0,0,0);
+	visibility: hidden;	
+}
